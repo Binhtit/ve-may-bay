@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TranThanh Company, Vé máy bay giá rẻ Vietjet, Jestar, VNAirlines, BamBoo Khuyến Mãi 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Đang bán nhiều vé máy bay giá rẻ Vietjet, Jetstar, BamBooAirways, VietNamAirlines. Vé Quốc Tế đi tất cả các nước. Giờ làm việc: 0h-24h (không nghỉ)">
+  <meta name="keywords" content="ve may bay, ve may bay gia re, ve may bay tet 2018, dai ly ve may bay ABAY">
+  <link rel="shortcut icon" type="image/png" href="./img/may bay.png" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/autocomplete.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/style.css" />
+ 
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/bottom.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/login.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./style-index.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./src/script.js"></script>
+</head>
+
+<body class=" bg-light">
+  <div id="bgAnHien"></div>
+  <div class=" container header-menu">
+    <div class=" d-flex align-items-center justify-content-between" style=" height: 60px; position: relative;">
+      <div class="d-flex">
+        <img class="mr-2" id="maybay" src="./img/logo.1.png">
+        <a class=" text-secondary logo" href="#">
+          <img style="width: 255px; height: 60px;" src="./img/logo tran thanh 2.png" alt="Trần Thanh Travel">
+        </a>
+        <img class="pr-3 p-1" alt="logo" src="./img/logo-may.png">
+      </div>
+
+      <hr style="width:55px; transform: rotate(90deg)" color="teal"> 
+
+      <div class="d-flex">
+        <i class=" pl-5 fas fa-headset text-info " style=" font-size:40px;"></i>
+        <p class=" text-info ml-3 mb-0">Hổ trợ<br><strong>07774.27772</strong></p>
+      </div>
+
+      <hr style="width:50px; transform: rotate(90deg)" color="teal"> 
+
+      <div class="nav nav-tabs border-bottom-0">
+        <ul class="nav-item d-flex ">
+          <a class=" nav-link text-secondary" id="btdangNhap" href="#">Đăng nhập</a>
+          <a class=" nav-link text-secondary" id="btdangKy" href="#">Đăng ký</a>
+        </ul>
+      </div>
+    </div>
+
+    <!--login-->
+    <div ID="login" class="login">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card cardLogIn">
+          <div class="card-header">
+            <h3>Đăng nhập</h3>
+            <div class="d-flex justify-content-end social_icon">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span><i class="fab fa-google-plus-square"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+            </div>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Gmail - Số điện thoại">
+
+              </div>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Mật khẩu">
+              </div>
+              <div class="px-3 row align-items-center ">
+                <input type="checkbox">&nbsp; Nhớ mật khẩu
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Đăng nhập" class="btn float-right login_btn">
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center links"><a href="#">Đăng ký</a>-
+              <a href="#">Quên mật khẩu?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- signup -->
+    <div ID="signup" class="login">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card cardSignUp">
+          <div class="card-header text-center">
+            <h3>Đăng ký</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <input type="text" name="name" class="form-control my-input" id="name" placeholder="Họ và tên">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control my-input" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="number" min="0" name="phone" id="phone" class="form-control my-input" placeholder="Số điện thoại">
+              </div>
+              <div class="text-center ">
+                <button type="submit" class=" btn btn-block send-button btn-danger">Tạo tài khoản</button>
+              </div>
+
+
+
+
+            </form>
+          </div>
+          <div class="card-footer">
+            <span class="span-or">Đăng ký bằng:</span>
+
+
+            <div class="form-group">
+              <div class="d-flex justify-content-center dangKyIcon">
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-google-plus-square"></i></span>
+                <span><i class="fab fa-twitter-square"></i></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- messeger -->
+    <!-- <div id="hoTro" class="ho-tro d-flex justify-content-around align-items-center">
+        <button id="btHoTro" class="btn btn-success">Hổ Trợ<br><i class="far fa-comments display-4"></i></button>
+       
+      <a href="Tel:0777427772"><img src="./img/hoTro.PNG" alt="Hổ trợ"></a>
+      </div> -->
+
+  </div>
+  <div class=" bg-info">
+    <div class="nav nav-tabs border-bottom-0 container ">
+      <ul class="nav-item d-flex ulmenu2">
+        <a class="nav-link text-light" href="#">Trang chủ</a>
+        <a class="nav-link text-light" href="#">Khuyến mãi</a>
+        <a class="nav-link text-light" href="#">Vé máy bay</a>
+        <a class="nav-link text-light" href="#">Khách sạn</a>
+        <a class="nav-link text-light" href="#">Combo tiết kiệm</a>
+        <a class="nav-link text-light" href="#">Đưa đón sân bay</a>
+        <a class="nav-link text-light" href="#">Tham quan & Hoạt động</a>
+      </ul>
+    </div>
+
+    <!-- menu sub -->
+    <div class="d-flex justify-content-center divMenuNho">
+
+      
+      <a class=" text-light logo" href="#">
+     
+        <img style="width: 182px; height: 64px;" src="./img/logo tran thanh.png" alt="TranThanhCompany">
+      </a>
+   
+      <div class="d-flex align-items-center">
+
+        <ul class="nav nav-pills ">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item dropdown d-flex">
+            <a class="nav-link dropdown-toggle" style="padding:12px;" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars text-white"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Khuyến mãi</a>
+              <a class="dropdown-item" href="#">Vé máy bay</a>
+              <a class="dropdown-item" href="#">Khách sạn</a>
+              <a class="dropdown-item" href="#">Combo tiết kiệm</a>
+              <a class="dropdown-item" href="#">Đưa đón sân bay</a>
+              <a class="dropdown-item" href="#">Tham quan & Hoạt động</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class=" d-flex align-items-center justify-content-between" style=" height: 60px;">
+
+
+          <hr style="width:35px; transform: rotate(90deg)" color="teal"> 
+
+          <div class="d-flex ">
+            <i class=" pl-1 fas fa-headset text-white " style=" font-size:30px;"></i>
+            <p class=" text-white ml-2 mb-0">Hổ trợ<br><strong>07774.27772</strong></p>
+          </div>
+
+          <hr style="width:35px; transform: rotate(90deg)" color="teal"> <!-- hr -->
+
+          <div class="nav nav-tabs border-bottom-0">
+            <ul class="nav-item d-flex ">
+              <a class=" nav-link text-light" href="#">Đăng nhập</a>
+              <a class=" nav-link text-light" href="#">Đăng ký</a>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- div sub-2 -->
+    <div class="row d-flex justify-content-between divMenuSieuNho">
+
+    
+      <div class="col-6 d-flex justify-content-around align-items-center p-0">
+        <ul class="nav nav-pills ">
+
+          <li class="nav-item dropdown d-flex">
+            <a class="nav-link pl-1 pr-0" style="font-size: 40px" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars text-white"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">KHUYẾN MÃI</a>
+              <a class="dropdown-item" href="#">VÉ MÁY BAY</a>
+              <a class="dropdown-item" href="#">ĐẶT PHÒNG KHÁCH SẠN</a>
+              <a class="dropdown-item" href="#">TOUR DU LỊCH</a>
+
+            </div>
+          </li>
+        </ul>
+
+        <a class=" text-light logo" href="#">
+         
+          <img style="padding: 5px; width: 160px; height: 65px;" src="./img/logo tran thanh.png" alt="TranThanhCompany">
+        </a>
+      </div>
+
+      <!-- <div class="col-4 nav nav-tabs border-bottom-0 text-center">
+        <ul class="nav-item d-flex  p-0 m-0">
+          <a class=" nav-link text-light" href="#">Đăng nhập</a>
+        </ul>
+  </div> -->
+
+      <div class="col-6">
+        <div class=" d-flex align-items-center justify-content-between" style=" height: 60px;">
+
+
+          <hr style="width:35px; transform: rotate(90deg)" color="teal"> <!-- hr  -->
+
+          <div class="d-flex align-items-center pr-3">
+            <i class=" pl-1 fas fa-headset text-white " style=" font-size:30px; padding-right: 5px;"></i>
+            <p class=" text-white ml-2 mb-0">Hổ trợ<br><strong>07774.27772</strong></p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide div-carousel" data-ride="carousel">
+      <ol class="carousel-indicators justify-content-end mr-4">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner ">
+        <div class="carousel-item active  ">
+          <div class=" d-flex justify-content-center">
+            <img class="d-block img-carousel" src="./img/1.jpg" alt="First slide">
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="d-flex justify-content-center">
+            <img class="d-block img-carousel" src="./img/2.png" alt="Second slide">
+          </div>
+        </div>
+        <div class="carousel-item bg-light">
+          <div class="d-flex justify-content-center">
+            <img class="d-block img-carousel" src="./img/3.png" alt="Third slide">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+    <!-- Ve may bay chua co API -->
+    <div class=" container p-0"  style="position:relative;">
+
+      <div id="oder" class="bg-white shadow-lg div-tuy-chon p-0 rounded-bottom">        <!-- div menu ticket sales -->
+  
+                                 <!-- change div -->
+      <ul class="nav nav-tabs button-menu-an-hien">
+          <li class="nav-item d-flex">
+              <button id="ve" class="nav-link active btn-info" href="#"><i class="far fa-paper-plane pr-3"></i>Vé máy bay</button>
+              <button id="tour" class="nav-link active btn-info" href="#"><i class="fas fa-umbrella-beach pr-3"></i>Đặt tour du
+                lịch</button>
+        </ul>
+  
+      <div class=" bg-secondary">
+        <p class="text-light"><i class="fas fa-piggy-bank text-warning mx-3 py-2" style=" font-size:30px;"></i>Đặt combo
+          tour du lịch để được giảm 15%</p>
+      </div>
+      <div>
+        <div>
+          <!-- get from form                  DIV ticket sales-->
+          <div id="div-ban-ve">
+          <div class=" d-flex justify-content-between">
+            <form class="px-5" autocomplete="off" action="/action_page.php">
+              <label class="text-info" for="from"><strong>Điểm khởi hành</strong></label>
+              <div class="autocomplete input-group mb-3 nhap-thong-tin mr-0">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
+                </div>
+                <input id="from"  type="text" class="form-control w-50" name="myCountry" placeholder="Đi" aria-label="Username"
+                  aria-describedby="basic-addon1">
+  
+              </div>
+            </form>
+  
+            <form class="px-5" autocomplete="off" action="/action_page.php">
+              <label class="text-info" for="to"><strong>Điểm đến</strong></label>
+              <div class="autocomplete input-group mb-3 nhap-thong-tin mr-0">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>
+                </div>
+                <input id="to" type="text" class="form-control w-50" name="myCountry" placeholder="Đến" aria-label="Username"
+                  aria-describedby="basic-addon1">
+  
+              </div>
+            </form>
+  
+  
+          </div>
+         
+            <div class=" d-flex justify-content-between ">
+              <div class="px-5">
+                <label class="text-info" for="ngay-di"><strong>Ngày đi</strong></label>
+                <div class="input-group mb-3 nhap-thong-tin mr-0">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text" id="nhap-ngay-di"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+                  <input id="ngay-di" type="date" class="form-control w-50" placeholder="Đi" aria-label="Username"
+                    aria-describedby="nhap-ngay-di">
+                </div>
+              </div>
+              <label class="px-1"><input type="checkbox" name="Khứ hồi"> <span class="btn btn-primary">Khứ Hồi</span></label>
+              <div class="px-5">
+                <label class="text-info" for="ngay-ve"><strong>Ngày về</strong></label>
+                <div class="input-group mb-3 nhap-thong-tin mr-0">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text" id="nhap-ngay-ve"><i class="fas fa-plane-arrival"></i></span>
+                  </div>
+                  <input id="ngay-ve" type="date" class="form-control w-50" placeholder="Đến" aria-label="Username"
+                    aria-describedby="nhap-ngay-ve">
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="px-5 pb-3">
+              <label class="text-info" for="so-hanh-khach"><strong>Số hành Khách</strong></label>
+              <div class="input-group mb-3 mr-0">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text" id="nhap-so-khach"><i class="fas fa-users"></i></span>
+                </div>
+                <input id="so-hanh-khach" type="number" class="form-control w-50" placeholder="Số hành khách"
+                  aria-describedby="nhap-so-khach">
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div>
+          <!--  DIV TOUR -->
+          <div id="div-tour" class="d-none">
+  
+            <div class="px-5">
+              <label class="text-info" for="ten-khach-san"><strong>Điểm đến/Tên Khách sạn</strong></label>
+              <div class="input-group mb-3 mr-0">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text" id="nhap-ten-khach-san"><i class="fas fa-hotel"></i></span>
+                </div>
+                <input id="ten-khach-san" type="number" class="form-control w-50" placeholder="Số hành khách"
+                  aria-describedby="nhap-ten-khach-san">
+  
+              </div>
+            </div>
+  
+            <div class=" d-flex justify-content-between">
+              <div class="px-5">
+                <label class="text-info" for="nhan-phong"><strong>Nhận phòng</strong></label>
+                <div class="input-group mb-3 nhap-thong-tin mr-0">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text" id="nhap-phong"><i class="fas fa-sign-in-alt"></i></span>
+                  </div>
+                  <input id="nhan-phong" type="date" class="form-control w-50" placeholder="Đi" aria-label="Username"
+                    aria-describedby="nhap-phong">
+                </div>
+              </div>
+              <div class="px-5">
+                <label class="text-info" for="tra-phong"><strong>Trả phòng</strong></label>
+                <div class="input-group mb-3 nhap-thong-tin mr-0">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text" id="nhap-tra-phong"><i class="fas fa-sign-out-alt"></i></span>
+                  </div>
+                  <input id="tra-phong" type="date" class="form-control w-50" placeholder="Đến" aria-label="Username"
+                    aria-describedby="nhap-tra-phong">
+                </div>
+              </div>
+  
+            </div>
+  
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <!-- <div class=" container p-0" style="position:relative;">
+
+    <div id="oder" class="bg-white shadow-lg div-tuy-chon p-0 rounded-bottom">
+    
+
+    
+      <ul class="nav nav-tabs button-menu-an-hien">
+        <li class="nav-item d-flex">
+          <button id="ve" class="nav-link active btn-info" href="#"><i class="far fa-paper-plane pr-3"></i>Tìm vé máy
+            bay</button>
+
+      </ul>
+
+      <div class=" bg-secondary">
+        <p class="text-light"><i class="fas fa-piggy-bank text-warning mx-3 py-2" style=" font-size:30px;"></i>Đặt
+          combo
+          tour du lịch để được giảm 15%</p>
+      </div>
+      <div>
+        <div class="text-center">
+       
+
+          <iframe id='ifrSearchForm' src='https://sbs.datacom.vn/Default.aspx?ProductKey=rskhnz5ny6hianv' style='border:0px;width:95%;height:420px;z-index:999;position:relative'
+            scrolling='no'></iframe>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+  <div class="container-fluid mt-5 bg-white text-center">
+
+    <hr>
+    <h2>ĐỐI TÁC HÀNG KHÔNG</h2>
+    <img id="i-hangHangKhong" src="./img/cacHangHangKhong.jpg" >
+    <hr>
+    <h2>CHÚNG TÔI MANG LẠI GÌ CHO BẠN</h2>
+    <hr>
+    <div class="row my-3 border-bottom">
+
+      <div class="col-lg-4 col-12 px-5 text-center">
+        <h4>Hợp tác 24/24</h4>
+        <i class="far fa-handshake my-3" style="font-size: 160px"></i>
+        <p> Theo giỏi và giúp bạn ưu đãi từ các nhà cung cấp khi đặt theo gói</p>
+      </div>
+      <div class="col-lg-4 col-12 px-5 text-center  border-left">
+        <h4>Tiết kiệm chi phí cho bạn</h4>
+        <i class="fas fa-piggy-bank my-3" style="font-size: 160px"></i>
+        <p>TranThanhCompany luôn theo giỏi và cập nhật giá tốt nhất và chất lượng đảm bảo cho khách hàng</p>
+      </div>
+      <div class="col-lg-4 col-12 px-5 text-center  border-left">
+        <H4>Hổ trợ tới tận cửa sân bay</H4>
+        <i class="fas fa-headset my-3" style="font-size: 160px"></i>
+        <p>Nhân viên luôn túc trực theo giỏi chăm sóc hổ trợ 24/24 bất cứ khi nào khách hàng cần</p>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <!-- <div class="col-12">
+        <iframe name='flightframe' scrolling='no' id='flightframe' src='https://sbs.datacom.vn/Flights.aspx?ProductKey=rskhnz5ny6hianv' frameborder='0' style='width:100%;height:600px'></iframe><script src='https://sbs.datacom.vn/Scripts/Resizer/iframeResizer.min.js' type='text/javascript'></script><script src='https://sbs.datacom.vn/Scripts/Resizer/resizer.js' type='text/javascript'></script>
+    </div> -->
+
+
+      <div class="col-lg-4 col-12 p-0 d-flex justify-content-center align-items-end anh-vn" style="height:500px; background-image:url(./img/vn.jpg)">
+        <div class="card bg-secondary  Bcard">
+          <div class="card-body bg-dark  text-center">
+            <h5 class="card-title text-white">Du lịch Việt Nam</h5>
+            <p class="card-text text-white">Tham quan các cảnh đẹp của 3 miền Bắc, Trung, Nam để khám phá các nét đẹp
+              văn hóa và ẩm thực từng vùng miền. Cùng du lịch đến các địa điểm nổi tiếng.</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 p-0 d-flex justify-content-center align-items-end anh-vn" style="height:500px; background-image:url(./img/p.jpg); background-size: cover;">
+        <!-- //background-size TỰ CĂN CHỈNH -->
+
+        <div class="card bg-secondary  Bcard">
+          <div class="card-body bg-dark text-center ">
+            <h5 class="card-title text-white">Du Lịch Châu Âu</h5>
+            <p class="card-text text-white">Khám phá nét đẹp châu âu cùng các địa danh nổi tiếng. Combo được giảm 15%.</p>
+            <a href="#" class="btn btn-primary">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 p-0 d-flex justify-content-center align-items-end anh-vn" style="height:500px; background-image:url(./img/bk.jpg)">
+        <div class="card bg-secondary  Bcard">
+          <div class="card-body bg-dark  text-center">
+            <h5 class="card-title text-white">Du Lịch Châu Á</h5>
+            <p class="card-text text-white">Khám phá châu á, các địa điểm nổi tiếng. Khuyến mãi 15% khi chọn phòng
+              khách sạn trọn gói.</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center py-5">
+        <hr>
+        <h4>ĐI ĐÂU HÈ NÀY?</h4>
+        <hr>
+        <img src="./img/s1.PNG">
+        <img src="./img/s2.PNG">
+        <img src="./img/s3.PNG">
+        <img src="./img/s4.PNG">
+      </div>
+      <div class="col-12 h-100 bg-dark">
+        <div class="row">
+          <div class="col-12 py-3 d-flex justify-content-center">
+            <h5 class="text-white">Nhập thông tin để nhận khuyến mại hấp dẫn nhất: </h5>
+            <form class="pl-2">
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup">Nhập số điện thoại</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-phone-square"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập số điện thoại">
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup">Nhập Email</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-at"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập Email">
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-2">Đăng ký</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-3 info1">
+              <img class="rounded logobt" style="width:90%" src="./img/logo-3.PNG" alt="logo">
+              <i class="fas fa-award text-white footer"></i>
+              <i class="fab fa-facebook-square text-white footer"></i>
+              <i class="fab fa-twitter-square text-white footer"></i>
+
+
+            </div>
+            <div class="col-3 info" style="height:330px">
+              <ol>
+
+                <li><strong>Về TrầnThanhCompany</strong></li>
+                <li>Cách đặt chổ</li>
+                <li>Liên hệ chúng tôi</li>
+                <li>Trợ giúp</li>
+
+              </ol>
+            </div>
+            <div class="col-3 info" style="height:330px">
+              <ol>
+
+                <li><strong>Sản phẩm</strong></li>
+                <li>Vé máy bay</li>
+                <li>Khách sạn</li>
+                <li>Combo tiết kiệm</li>
+                <li>Tham quan và Hoạt động</li>
+
+              </ol>
+            </div>
+            <div class="col-3 info" style="height:330px">
+              <ol>
+
+                <li><strong>Khác</strong></li>
+                <li>Chính sách quyền riêng tư</li>
+                <li>Báo chí</li>
+                <li>Báo sự cố</li>
+
+              </ol>
+            </div>
+
+            <div class="col-12 text-center py-3 border-top">
+              <li>Copyright © 2018 TrầnThanhCompany by <a href="https://www.facebook.com/thitsot.cachua">devbinh@gmail.com</a></li>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div id="phonering-alo-phoneIcon" class="phonering-alo-phone phonering-alo-green phonering-alo-show">
+      <div class="phonering-alo-ph-circle"></div>
+      <div class="phonering-alo-ph-circle-fill"></div>
+      <div class="phonering-alo-ph-img-circle" id="bay">
+        <a href="#"><i class="fas fa-paper-plane p-0" style="color: orange; font-size: 30px; margin-top: -30px; margin-left: -37px;"></i></a>
+
+      </div>
+      <img class="earth" src="./img/earth.png">
+    </div>
+  </div>
+
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v3.2'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="1149751375195975" theme_color="#44bec7"
+    logged_in_greeting="Chào bạn! Mình có thể giúp gì cho bạn không?." logged_out_greeting="Chào bạn! Mình có thể giúp gì cho bạn không?.">
+  </div>
+
+
+  <!-- THONG BAO ĐANG BẢO TRÌ -->
+
+  <!-- <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Rất xin lỗi</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Hiện tại hệ thống server TranThanhCompany đang bảo trì. Quý khách vui lòng quay lại sau.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Đồng ý</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+
+</body>
+
+</html>

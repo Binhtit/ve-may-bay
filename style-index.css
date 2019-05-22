@@ -1,0 +1,181 @@
+.img-carousel{
+   width:1905px;
+}
+
+.div-carousel{
+   height: 350px;
+   overflow: hidden;
+}
+
+.bg-an-hien{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: dimgray;
+    z-index: 2;
+    opacity: 0.6;
+}
+.div-an-hien{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+.button-menu-an-hien{
+    position:absolute; 
+    top: -41px; 
+    left: 0%;
+}
+
+.Logo{
+    text-decoration: none;
+}
+.logo:hover{
+    text-decoration:none !important;
+}
+#maybay{
+    height:40px; 
+    position: absolute; 
+    left:-30%;
+    top: 10%;
+    transition: all 0.7s 0s ease-in-out;
+}
+#maybay:hover{
+    margin-left: 340px;
+    margin-top: 9px;
+}
+
+.nut-menu{
+    opacity: 0.2;
+}
+.div-tuy-chon{
+    
+    
+    margin: 0 auto;
+}
+
+.khu-hoi{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.ho-tro{
+    height:100px; 
+    width:100px; 
+    position: fixed; 
+    z-index: 999;
+    right: -93px;
+    bottom: 7%;
+}
+.ho-tro2{
+    height:100px; 
+    width:100px; 
+    position: fixed; 
+    z-index: 999;
+    right: 85px;
+    bottom: 7%;
+}
+#i-hangHangKhong{
+    width: 100%;
+    display: none;
+}
+
+.anh-vn{
+    border: 10px solid #F8F9FA;
+}
+.anh-vn:hover .Bcard{                   /*hover vào ảnh tác động tới bcard*/
+    opacity: 0.8;
+}
+
+.Bcard{
+    opacity: 0;
+    transition: all 1s;
+
+}
+/* .Bcard:hover{
+    opacity: 0.8;
+
+} */
+li{
+    color: #F3F3F3;
+    list-style: none;
+}
+.footer{
+    font-size: 50px;
+    margin: 20px;
+}
+hr{
+    width: 600px;
+}
+
+.btn-info{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1367px){
+    .div-carousel{
+        height: 268px;
+    }
+    .img-carousel{
+        width: 100%;
+        height: 355px; 
+    }
+}
+
+@media only screen and (max-width: 1200px ) {
+    .ulmenu2 {
+        font-size: 14px;
+    }
+    #maybay{
+        left:-36%; 
+    }
+}
+@media only screen and (max-width: 992px ) {
+    .ulmenu2, .header-menu{
+        display: none!important;
+    }
+    
+}
+
+@media only screen and (min-width: 992px ) {
+    .divMenuNho {
+        font-size: 14px;
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 800px ) {
+    .divMenuNho {
+        font-size: 14px;
+        display: none !important;
+    }
+    .info{
+        display: none;
+    }
+    .info1{
+        display: flex;
+        padding: 30px;
+    }
+    .logobt{
+          width: 348% !important;
+    }
+    .img-carousel{
+        width:100%;
+        height: 100%;
+     }
+     .div-carousel{
+        height: 116px;
+        overflow: hidden;
+     }
+    
+}
+@media only screen and (min-width: 801px ) {
+    .divMenuSieuNho {
+        font-size: 1px;
+        display: none !important;
+    }
+  
+    }
+
+
+
